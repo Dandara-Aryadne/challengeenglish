@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,110 +10,262 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     list-style: none;
 }
-body{
-    background-color: aliceblue;
-}
-h1{
-    display: flex;
-    justify-content: center;
-    width: 25vw;
-    padding: 5%;
-    font-size: 25px;
-    color: navy; 
-}
-h1:hover{
-    cursor:pointer;
-    font-weight: 500;
-    color:#58ACFA;
-    font-family: 'Verdana', serif;
-    text-shadow: 40px 30px 30px purple;
-}
-nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 90vw;
-    height: 1vh;
-}
-nav ul{
-    display: flex;
-    justify-content: space-around;
-    width: 30vw;
-    height: 22vh;
-    font-size: 15px;
-    font-weight: 100;
-    color:#58ACFA;
-}
-nav li:hover{
-    cursor: pointer;
-    font-weight: 900;
-    text-shadow: 40px 30px 30px purple;
-}
-.introduction img{
+header{
+    border:black;
+    height: 100vh;
     width: 100%;
-    height: 20%;
-}
-.text1{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 60%;
-    bottom: 450px;
-    right: 55px;
-    font-size: 40px;
-    font-weight: 700;
-    color: white;
-}
-main{
-    height: 100%;
-}
-.ada img{
-    width: 20vw ;
-          
-}
-.ada{
-    position: absolute;
-    z-index: 20;
-    top: 48%;
-    left: 15%;
-    
-}
-@media(max-width:600px){
-   .ada{
-       top: 88.5%;
-       left: 2%;
-   } 
 }
 
-.ada:hover{
-    opacity: 70%;
-    cursor:grab;
+a {
+    text-decoration: none;
 }
-.section1{
+.titulo{
+    border:solid aquamarine;
+    font-family: 'Permanent Marker', cursive;
+    font-weight:300;
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    font-size: 40px;
+    color: skyblue;
+    margin-top:1vh;
+    padding: 3vh;
+}
+.titulo:hover{
+    cursor:pointer;
+    color:lightcoral;
+    text-shadow: 40px 30px 30px lightsalmon;
+}
+main{
+    border:solid gold;
+    height: 100%;  
+}
+.introduction img{
+    height: 90%;
+    width: 100%;
+    border:solid tomato;
+    margin-top:-13vh;
+}
+.textmain{
+    border:solid pink;
+    font-family: 'Permanent Marker', cursive;
+    color:#58ACFA;
+    font-weight:300;
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    font-size: 20px;
+    margin-top:5vh;
+    padding: 3vh;
+}
+.textada{
+    border:solid hotpink; 
+}
+.texthome{
+    position: absolute;
+    top: 78%;
+    left: 41.7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 45%;
+    border:solid darkblue;
+
+}
+.enfeite{
+    display: flex;
+    position:relative;
+}
+.bloquinhos1{
+    display: flex;
+     position: absolute;
+     top: 9px;
+     z-index: 8;
+     left:1%;
+     width: 8vw;
+     height: 8vw;
+     background-color: blue;
+     background-repeat: no-repeat;
+     background-size: cover;
+     box-shadow: 1px 5px 40px 4px rgb(87, 73, 100);
+     border:blue;
+     border-radius: 15px;
+}
+.bloquinhos2{
+    display: flex;
+     position: absolute;
+     top: 50px;
+     z-index:15;
+     left:5%;
+     width: 8vw;
+     height: 8vw;
+     background-color: orange;
+     background-repeat: no-repeat;
+     background-size: cover;
+     border:orange;
+     border-radius: 15px;
+}
+.bloquinhos3{
+    display: flex;
+     position: absolute;
+     top:30px;
+     z-index: 10;
+     left:3%;
+     width: 8vw;
+     height: 8vw;
+     background-color:lightcoral ;
+     background-repeat: no-repeat;
+     background-size: cover;
+     border:lightcoral;
+     border-radius: 15px;
+}
+.red-section{
+    display: flex;
+    justify-content: space-around;
+    
+ }
+ 
+ .red-box{
+     display: flex;
+     position: absolute;
+     top:192%;
+     z-index: 20;
+     left: 8%;
+     width: 21vw;
+     height: 28vw;
+     background-image: url(./images/Ada-l-3-e1587696726933.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-radius: 20px;
+ }
+ .red-content{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    width: 100%;
+    height: 18vh;
+}
+.content1{
+        font-size: 80px;
+        color: #fff;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      
+@keyframes glow {
+        from {text-shadow: 0 0 10px lightcoral, 0 0 20px lightcoral, 0 0 30px lightcoral, 0 0 40px lightcoral, 0 0 50px lightcoral, 0 0 60px lightcoral, 0 0 70px lightcoral;
+        }
+        to {text-shadow: 0 0 20px lightcoral, 0 0 30px lightcoral, 0 0 40px lightcoral, 0 0 50px lightcoral, 0 0 60px lightcoral, 0 0 70px lightcoral, 0 0 80px lightcoral;
+        }
+    }
+.content1{
+    color: white;
+    box-shadow:gradient;
+    font-weight: lighter;
+    font-size: 10vw;
+    font-family: 'Dancing Script', cursive;
+    z-index:5;
+}
+
+.slideshow {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3; /*retirar*/
+    border: firebrick;
+  }
+  
+  /** SLIDESHOW **/
+  .slide{
+    width: 50%;
+    height: 60%;
+    margin-top: 80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    left:4vw;
+  border-radius: 10px;  
+}
+  .slideshow,
+  .slideshow:after { 
+      position:relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      left: 0px;
+      z-index: 3;
+      border-radius: 10px;  
+  }
+  
+  .slideshow li span { 
+      position: absolute;
+      width: 90%;
+      height: 100%;
+      top: 0px;
+      left: 5%;
+      color: transparent;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      opacity: 0;
+      z-index: 0;
+      animation: imageAnimation 60s linear infinite 0s;
+      border-radius: 10px;  
+ }
+  
    
+  .slideshow li:nth-child(1) span { 
+      background-image: url("/images/primeira-programadora.jpg"); 
+      animation-delay: 2s; 
+    }
+  .slideshow li:nth-child(2) span { 
+      background-image: url("./images/cover.jpg");
+      animation-delay: 2s; 
+  }
+  .slideshow li:nth-child(3) span { 
+      background-image: url("./images/i428465.jpeg");
+      animation-delay: 2s; 
+  }
+  
+  @keyframes imageAnimation { 
+      0% { opacity: 0; animation-timing-function: ease-in; }
+      8% { opacity: 1; animation-timing-function: ease-out; }
+      17% { opacity: 1 }
+  }
+  
+  
+  @keyframes titleAnimation { 
+      0% { opacity: 0 }
+      8% { opacity: 1 }
+      17% { opacity: 1 }
+  }
+  
+  
+  .no-cssanimations .cb-slideshow li span {
+      opacity: 1;
+  }
+  
+.partedebaixo{
     display: flex;
     position: relative;
+    height: 110vw;
+    width: 100%;
+    border:solid darkgray;
+    /*background-color:#2D2D2D;*/
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.middle figure{
-    width: 40vw;
+footer{
+    border:solid;
 }
-.rey{
-    position: absolute;
-    display: flex;
-    left: 73.3%;
-    top: 51.2%;
-    z-index: 30;    
-}
-.rey :hover{
-    opacity: 90%;
-    cursor:grab;
-}
-.rey img{
-    width: 20vw;
-}
-@media(max-width:600px){
-    .rey{
-        top: 88.5%;
-        right: 30%;
-    } 
- }
