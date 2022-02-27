@@ -102,7 +102,7 @@ main{
     height: 60vh;
     font-size:2vw;
     font-family: 'Hubballi', cursive;
-    color:#000000;
+    color:#4C4542;
     text-align: justify;
 }
 /*.titulo{
@@ -161,6 +161,7 @@ main{
     border-radius: 20px;
     box-shadow: #F07F54 0px 2px 4px, #F07F54 0px 7px 13px -3px, #F07F54 0px -3px 0px inset;
 }
+
 .bloquinho1{
     display: flex;
     position: absolute;
@@ -202,31 +203,32 @@ main{
     position:relative;
     width:100%;
     height:100vh;
-    border:solid red;
     /*background-color:#2D2D2D;*/
 }
 .glow {
     display: flex;
     position: absolute;
-    top:76%;
+    top:78%;
     z-index: 20;
     left: 55vw;
-    width: 18vw;
+    width: 25vw;
     font-size:9.5vw;
     font-family: 'Dancing Script', cursive;
     color: #fff;
     text-align: center;
+    justify-content: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
+    border:solid;
   }
   
-  @-webkit-keyframes glow {
+  @keyframes glow {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+      text-shadow: 0 0 10px #fff, 0 0 20px lightcoral , 0 0 30px lightcoral , 0 0 40px lightcoral, 0 0 50px lightcoral, 0 0 60px lightcoral, 0 0 70px lightcoral;
     }
     to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      text-shadow: 0 0 20px #FF9F5C , 0 0 30px #FF9F5C , 0 0 40px #FF9F5C , 0 0 50px #FF9F5C , 0 0 60px #FF9F5C , 0 0 70px #FF9F5C , 0 0 80px #FF9F5C ;
     }
   }
 
@@ -262,6 +264,9 @@ main{
     animation: imageAnimation 30s linear infinite 0s; 
   }
   
+  .slideshow:hover{
+     cursor:pointer;
+  }
   
   .slideshow li:nth-child(1) span { 
       background-image: url(./images/slide.jpg); 
@@ -308,22 +313,35 @@ main{
   }
 
 .textunder{
-    width: 40%;
+    width: 45%;
     position: absolute;
-    top: 24%;
-    left: 30%;
+    top:30%;
+    left: 53%;
     display: flex;
     align-items: center;
     align-items: flex-end;
     flex-direction: column;
     height: 12%;
 }
+.textunder span{
+    font-size: 1.3vw;
+    text-align: justify;
+    font-family: 'Hubballi', cursive;
+    color:#4C4542;
+}
+/*
+    margin-left:32vh;
+    margin-top: 16vh;
+    color:#000000;
+    */
+
 
 
 footer{ 
     display: flex;
     flex-wrap: wrap;
-    background-color: gainsboro;
+    background-color: #DBF7FF ;
+    width: 100%;
   }
   
   .icons {
@@ -333,16 +351,120 @@ footer{
     margin: 3%;
     width: 45%;
   }
-  .icons:hover{
-    color: darkorange;
-    cursor: pointer;
-  
-  }
+  .icons img {
+    width: 100%;
+    height: 10vh;
+
+}
   .text2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: 'Hubballi', cursive;
     font-size: 12px;
     width: 49%;
   }
-  
+.text2 p{
+    font-size: 4vh;
+}
+
+
+@media(max-width:600px){
+    .red-box{
+        width: 55%;
+        height: 45%;
+        left: 38%;
+        top: 8%;
+        
+    }
+
+}
+.red-text{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    display: flex;
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    
+}
+    
+@media(max-width:600px){
+.red-box h2{        
+        font-size: 7.4vw;
+       
+    }
+.red-text{
+        width: 65%;
+        left: 20%;
+        
+}    
+}
+@media(max-width:600px){
+    .red-box p{ 
+    font-size: 3vw;
+    top: 90%;
+}
+    .red-content{
+    top: 46%;
+    left: 17%;
+    width: 70%;
+    }
+}
+@media(max-width:600px){
+    
+    .title {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 4vh;
+    width: 40%;
+    font-weight: 400px;
+    font-family:'Permanent Marker', cursive;
+    color:lightcoral;
+    }
+    
+    .title:hover{
+        color:skyblue;
+        font-family:'Permanent Marker', cursive;
+        cursor: pointer;
+    }
+    
+    nav{
+        width: 42%;
+        font-family:'Permanent Marker', cursive;
+    }
+      
+    ul{
+        display: flex;
+        justify-content: space-around;
+        color: grey;
+        list-style: none;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    li{
+        color:skyblue;
+    }
+    
+    li:hover {
+        color:lightcoral;
+        font-family:'Permanent Marker', cursive;
+        cursor: pointer;
+        transform: translateX(8px);
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: darkslateblue;
+    }
+
+.introduction img{
+        display: flex;
+
+}
+}
